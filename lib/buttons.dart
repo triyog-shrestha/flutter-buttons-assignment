@@ -5,7 +5,7 @@ enum Button {
   day,week,month,year
 }
 
-enum Size{
+enum WidgetSize{
   xs,s,m,l,xl
 }
 
@@ -24,7 +24,7 @@ class ButtonsState extends State<Buttons> {
   static const Color green = Color(0xFF1B6B1B);
 
   Set<Button> selected1 = {Button.day};
-  Set<Size> selected2 = {Size.xl};
+  Set<WidgetSize> selected2 = {WidgetSize.xl};
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
@@ -56,18 +56,18 @@ class ButtonsState extends State<Buttons> {
 
               const SizedBox(height: 20,),
 
-              SegmentedButton<Size>(
+              SegmentedButton<WidgetSize>(
                   style: SegmentedButton.styleFrom(
                     selectedBackgroundColor: lightGreen,
                   ),
                   multiSelectionEnabled: true,
                   emptySelectionAllowed: true,
                   segments: const[
-                ButtonSegment(value: Size.xs, label: Text("XS")),
-                ButtonSegment(value: Size.s, label: Text("S")),
-                ButtonSegment(value: Size.m, label: Text("M")),
-                ButtonSegment(value: Size.l, label: Text("L")),
-                ButtonSegment(value: Size.xl, label: Text("XL")),
+                ButtonSegment(value: WidgetSize.xs, label: Text("XS")),
+                ButtonSegment(value: WidgetSize.s, label: Text("S")),
+                ButtonSegment(value: WidgetSize.m, label: Text("M")),
+                ButtonSegment(value: WidgetSize.l, label: Text("L")),
+                ButtonSegment(value: WidgetSize.xl, label: Text("XL")),
               ],
                   selected: selected2,
                 onSelectionChanged: (newSelection){
@@ -186,14 +186,87 @@ class ButtonsState extends State<Buttons> {
               const Divider(),
 
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   IconButton(onPressed: (){},
                     icon: Icon(Icons.cloud_outlined),
+                  ),
+                  IconButton.filled(onPressed: (){},
+                    icon: Icon(Icons.cloud_outlined),
+                    style: IconButton.styleFrom(
+                      backgroundColor: green,
+                      foregroundColor: Colors.white
+                    )
+                  ),
+                  IconButton.outlined(onPressed: (){},
+                    icon: Icon(Icons.cloud_outlined),
+                    style: IconButton.styleFrom(
+                      side: BorderSide(color: green),
+                      foregroundColor: green,
+                    )
+                  ),
+
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  IconButton(onPressed: (){},
+                    icon: Icon(Icons.close),
+                    style: IconButton.styleFrom(
+                      foregroundColor: green,
+                    ),
+                  ),
+                  IconButton(onPressed: (){}, 
+                    icon: Icon(Icons.chevron_left),
+                    style: IconButton.styleFrom(
+                      foregroundColor: green,
+                    ),
+                  ),
+                ],
+              ),
+
+              const Divider(),
+              const SizedBox(height: 20,),
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  FilledButton.icon(onPressed: (){},
+                      label: Text("Approve"),
+                      icon: Icon(Icons.thumb_up),
+                      style: FilledButton.styleFrom(
+                        backgroundColor: green,
+                    )
+                  ),
+
+                  IconButton.filled(onPressed: (){},
+                      icon: Icon(Icons.add),
+                      style: IconButton.styleFrom(
+                        backgroundColor: green,
+                      ),
                   )
                 ],
               ),
+              const SizedBox(height: 20,),
+              const Divider(),
+              const SizedBox(height: 20,),
+
+              FilledButton(onPressed: (){},
+                  style: FilledButton.styleFrom(
+                    backgroundColor: green,
+                    fixedSize: const Size(350, 50),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(4),
+                    )
+                  ),
+                  child: Text("Create Account"),
+              ),
+
+              const SizedBox(height: 20,),
             ],
 
           ),
