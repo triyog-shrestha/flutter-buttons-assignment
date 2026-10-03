@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'home.dart';
+import 'buttons.dart';
 
 class Details extends StatelessWidget {
   const Details({super.key});
@@ -239,7 +241,10 @@ class Details extends StatelessWidget {
                 const SizedBox(height: 20),
                 const Divider(),
                 const SizedBox(height: 20),
-                FilledButton.icon(onPressed: (){},
+
+                FilledButton.icon(onPressed: (){
+                  Navigator.pop(context, MaterialPageRoute(builder: (context) => Buttons()));
+                },
                         label: Text("Logout"),
                         style: FilledButton.styleFrom(
                           fixedSize: Size(350, 50),

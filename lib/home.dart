@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'buttons.dart';
+import 'details.dart';
+import 'profile.dart';
 class Home extends StatelessWidget{
   const Home({super.key});
 
   @override
   Widget build(BuildContext context) {
-    const Color lightGreen = Color(0xFFD5EBD0);
     const Color green = Color(0xFF1B6B1B);
 
     return Scaffold(
@@ -32,7 +34,9 @@ class Home extends StatelessWidget{
                           fixedSize: const Size(250, 50),
                       ),
                   ),
-                  OutlinedButton.icon(onPressed: (){},
+                  OutlinedButton.icon(onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => Profile()));
+                  },
                       label: Text("Profile"),
                       icon: Icon(Icons.person),
                       style: FilledButton.styleFrom(
@@ -50,7 +54,9 @@ class Home extends StatelessWidget{
                       fixedSize: const Size(250, 50),
                     ),
                   ),
-                  OutlinedButton.icon(onPressed: (){},
+                  OutlinedButton.icon(onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => Details()));
+                  },
                     label: Text("Details"),
                     icon: Icon(Icons.book_online),
                     style: FilledButton.styleFrom(
@@ -59,7 +65,9 @@ class Home extends StatelessWidget{
                       fixedSize: const Size(250, 50),
                     ),
                   ),
-                  OutlinedButton.icon(onPressed: (){},
+                  OutlinedButton.icon(onPressed: (){
+                    Navigator.pop(context, MaterialPageRoute(builder: (context) => Buttons()));
+                  },
                     label: Text("Logout"),
                     icon: Icon(Icons.logout),
                     style: FilledButton.styleFrom(
