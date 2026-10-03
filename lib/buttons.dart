@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'home.dart';
 
 enum Button {
   day,week,month,year
@@ -255,7 +255,9 @@ class ButtonsState extends State<Buttons> {
               const Divider(),
               const SizedBox(height: 20,),
 
-              FilledButton(onPressed: (){},
+              FilledButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Home()));
+              },
                   style: FilledButton.styleFrom(
                     backgroundColor: green,
                     fixedSize: const Size(350, 50),
