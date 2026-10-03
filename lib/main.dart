@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'buttons.dart';
+import 'home.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const Buttons(),
+      home: const Home(),
     );
   }
 }
