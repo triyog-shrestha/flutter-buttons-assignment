@@ -30,39 +30,48 @@ A comprehensive Flutter application demonstrating various Material 3 buttons, se
 Below are screenshots capturing the different screens and states of the application:
 
 ### 1. Buttons & Controls Screen
-![Buttons Screen](imgs/1.jpg)
+<img src="imgs/1.jpg" width="280" alt="Buttons Screen" />
+
 *Figure 1: The main Buttons screen featuring SegmentedButtons, Material 3 button variants, and icon buttons.*
 
 ### 2. Segmented Button Selection
-![Segmented Selection](imgs/2.jpg)
+<img src="imgs/2.jpg" width="280" alt="Segmented Selection" />
+
 *Figure 2: Interactive state demonstration of SegmentedButtons.*
 
 ### 3. Home Dashboard
-![Home Dashboard](imgs/3.jpg)
+<img src="imgs/3.jpg" width="280" alt="Home Dashboard" />
+
 *Figure 3: Home navigation dashboard providing access to Profile, Settings, Details, and Logout.*
 
 ### 4. User Profile Page
-![Profile Page](imgs/4.jpg)
+<img src="imgs/4.jpg" width="280" alt="Profile Page" />
+
 *Figure 4: User profile screen displaying user information, bio, location, and details.*
 
 ### 5. Album Details Page (Intro & Artwork)
-![Details Page Top](imgs/5.jpg)
+<img src="imgs/5.jpg" width="280" alt="Details Page Top" />
+
 *Figure 5: Details screen showing album overview and cover artwork.*
 
 ### 6. Album Details Page (Sound & Themes)
-![Details Page Middle](imgs/6.jpg)
+<img src="imgs/6.jpg" width="280" alt="Details Page Middle" />
+
 *Figure 6: Album sound and thematic breakdown section.*
 
 ### 7. Album Details Page (Notable Tracks & Features)
-![Details Page Tracks](imgs/7.jpg)
+<img src="imgs/7.jpg" width="280" alt="Details Page Tracks" />
+
 *Figure 7: Notable tracks list with bold song titles and italicized guest features.*
 
 ### 8. Additional Screen View 1
-![Additional View 1](imgs/8.jpg)
+<img src="imgs/8.jpg" width="280" alt="Additional View 1" />
+
 *Figure 8: Additional app view showing scrollable layout and button groupings.*
 
 ### 9. Additional Screen View 2
-![Additional View 2](imgs/9.jpg)
+<img src="imgs/9.jpg" width="280" alt="Additional View 2" />
+
 *Figure 9: Additional app view showcasing button alignment and styling.*
 
 ---
