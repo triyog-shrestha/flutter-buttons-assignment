@@ -66,7 +66,7 @@ class Profile extends StatelessWidget {
               ),
               const SizedBox(height: 12),
               const Text(
-                "Music enthusiast and collector of jazz-influenced hip hop and soul records. Huge fan of J. Coler's work, especially The Divine Feminine, Swimming, and Circles.",
+                "Music enthusiast and collector of jazz-influenced hip hop and soul records. Huge fan of Mac Miller's work, especially The Divine Feminine, Swimming, and Circles.",
                 style: TextStyle(fontSize: 15),
                 textAlign: TextAlign.justify,
               ),
